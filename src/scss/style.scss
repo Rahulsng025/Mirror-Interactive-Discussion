@@ -1,0 +1,38 @@
+
+@import "variables";
+
+
+@import "~@coreui/coreui/scss/coreui";
+
+
+@import "custom";
+
+@import url("../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+:root {
+  --meeting-control-height: 5.5rem;
+}
+app-meeting-page .controls-container {
+    height: var(--meeting-control-height);
+  }
+  
+  app-meeting-page .views-container {
+    height: calc(100vh - var(--meeting-control-height));
+  }
+
+  
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+  

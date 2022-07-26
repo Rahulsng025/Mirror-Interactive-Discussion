@@ -1,0 +1,93 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">Headings</div>
+    <div class="card-body">
+      <p>
+        Documentation and examples for Bootstrap typography, including global
+        settings, headings, body text, lists, and more.
+      </p>
+
+      <div class="container mt-5">
+        <form>
+          <div class="form-group row">
+            <label for="topic" class="col-2 col-form-label" >Topic</label>
+            <div class="col-5">
+              <input 
+              type="text" 
+
+             >
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-2"></div>
+            <div class="col-5">
+              <h2 class="text-primary" (click)="add()" *ngIf="show" style="cursor: pointer">
+                <i class="bi bi-plus"></i>Add Description
+              </h2>
+              <textarea type="text" class="form-control" placeholder="Add Description" *ngIf="!show"></textarea>
+            </div>
+          </div>
+
+          <div class="row mt-4 form-group">
+            <label class="col-2 col-form-label">Time&nbsp;Slot</label>
+            <div class="col-5">
+              <input type="date" class="form-control form-check-inline" style="width: 150px" >
+              <input class="form-control form-check-inline" style="width: 150px" type="time" >
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <label class="col-2 col-form-label">Duration</label>
+            <div class="col-5">
+              <mat-form-field appearance="outline" class="w-25" >
+                <mat-select >
+                  <mat-option *ngFor="let h of hour" [value]="h">{{
+                    h
+                    }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <span style="margin-left: 10px; margin-right: 10px">hr</span>
+              <mat-form-field appearance="outline" class="w-25" >
+                <mat-select >
+                  <mat-option *ngFor="let m of min" [value]="m" >{{
+                    m
+                    }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <span style="margin-left: 10px">min</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <label>Time&nbsp;Zone</label>
+            </div>
+            <div class="col-5">
+              <mat-form-field appearance="outline" class="w-100" >
+                <mat-select >
+                  <mat-option *ngFor="let tz of timezone" [value]="tz" >{{
+                    tz
+                    }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="typeNumber">Allow&nbsp;Participants</label>
+            <div class="col-2">
+              <input type="number"  class="form-control" />
+            </div>
+          </div>
+          <button mat-raised-button class="rounded-pill p-2 mx-auto" style="
+                        background-color: #aad3d5df;
+                        color: white;
+                        font-size: 20px;
+                      ">
+           Save
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

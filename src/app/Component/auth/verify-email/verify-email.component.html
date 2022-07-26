@@ -1,0 +1,55 @@
+<!-- <div class="conatiner" style="background-color: white">
+  <div class="row">
+    <div class="col-md-10">
+      <form>
+        <div class="formGroup" *ngIf="authService.userData as user">
+          <p class="text-center">
+            We have sent a confirmation email to
+            <strong>{{ user.email }}</strong>
+          </p>
+          <p class="text-center">
+            Please check your email and click on the link to verify your email
+            address
+          </p>
+        </div>
+        <div class="formGroup">
+          <button type="button" (click)="authService.SendVerificationMail()">
+            Resend Verification Email
+          </button>
+        </div>
+        <a routerLink="/login-form">Go back to? Login</a>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<section>
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12">
+        <h1 class="text-center">Mirror Interactive Discussion</h1>
+        <form>
+          <div class="formGroup" *ngIf="authService.userData as user">
+            <p class="text-center">
+              We have sent a confirmation email to
+              <strong>{{ user.email }}</strong>
+            </p>
+            <p class="text-center">
+              Please check your email and click on the link to verify your email
+              address
+            </p>
+          </div>
+          <br />
+          <div class="formGroup" style="margin-left: 40%">
+            <button type="button" (click)="authService.SendVerificationMail()">
+              Resend Verification Email
+            </button>
+          </div>
+          <a routerLink="/login-form" style="margin-left: 43%"
+            >Go back to? Login</a
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
