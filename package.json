@@ -89,5 +89,10 @@
   "engines": {
     "node": "^14.17.3",
     "npm": "7.12.1"
-  }
+  },
+  "resolutions": {
+    "autoprefixer": "10.4.5"
+}
+
+ 
 }
