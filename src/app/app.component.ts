@@ -18,7 +18,7 @@ import { UUID } from 'angular2-uuid';
 
 const config={
   apiKey: "AIzaSyAw3K6lDBs0POOqZuappVZn2AX41oiJOjQ",
-  authDomain: "mirror-chat-16203.firebaseapp.com",
+  authDomain: "mirror-chat-16203.firebaseapp.com",  
   databaseURL: "https://mirror-chat-16203-default-rtdb.firebaseio.com",
   projectId: "mirror-chat-16203",
   storageBucket: "mirror-chat-16203.appspot.com",
